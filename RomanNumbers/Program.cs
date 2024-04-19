@@ -4,6 +4,6 @@ using RomanNumbers.App;
 Console.WriteLine("Enter a number to be translated into a Roman Number");
 
 var romanNumbersConverter = new RomanNumbersConverter();
-var sentence = romanNumbersConverter.Convert(1);
+var sentence = RomanNumbersConverter.Convert(1);
 
 Console.WriteLine(sentence);

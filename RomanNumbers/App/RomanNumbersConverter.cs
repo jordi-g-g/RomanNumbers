@@ -1,50 +1,38 @@
+using System.Text;
+
 namespace RomanNumbers.App;
 
 public class RomanNumbersConverter
 {
-    public string Convert(int number)
+    private static readonly Dictionary<int, string> RomanNumerals = new Dictionary<int, string>
     {
-        var output = "";
+        { 1000, "M" },
+        { 900, "CM" },
+        { 500, "D" },
+        { 400, "CD" },
+        { 100, "C" },
+        { 90, "XC" },
+        { 50, "L" },
+        { 40, "XL" },
+        { 10, "X" },
+        { 9, "IX" },
+        { 5, "V" },
+        { 4, "IV" },
+        { 1, "I" }
+    };
 
-        if (number == 10 - 1)
+    public static string Convert(int number)
+    {
+        var output = new StringBuilder();
+        foreach (var item in RomanNumerals)
         {
-            output += "XI";
-            number -= 10 - 1;
-        }
-        while (number >= 10)
-        {
-            if (number == 10)
+            while (number >= item.Key)
             {
-                output += "X";
-                number -= 10;
-                break;
+                output.Append(item.Value);
+                number -= item.Key;
             }
-            output += "I";
-            number -= 1;
         }
-        if (number == 5 - 1)
-        {
-            output += "VI";
-            number -= 5 - 1;
-        }
-        while (number >= 5)
-        {
-            if (number == 5)
-            {
-                output += "V";
-                number -= 5;
-                break;
-            }
-            output += "I";
-            number -= 1;
-        }
-        for (var i = 0; i < number; i++)
-        {
-            output += "I";
-        }
-        
-        var charArray = output.ToCharArray();
-        Array.Reverse(charArray);
-        return new string(charArray);
+
+        return output.ToString();
     }
 }
