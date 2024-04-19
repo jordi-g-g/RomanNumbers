@@ -1,0 +1,6 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b1bff645_002Dbdb7_002D4a40_002D8c76_002D2eb33fda1324/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="say_hello" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::DB936AFC-E0A8-4F0B-963E-6482F591DC97::net8.0::RomanNumbers.RomanNumbersConverterShould.convert_Arabic_numbers_into_their_Roman_numeral_equivalents&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
