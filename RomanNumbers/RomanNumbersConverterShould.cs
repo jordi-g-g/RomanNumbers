@@ -15,6 +15,9 @@ namespace RomanNumbers
             Assert.That("II", Is.EqualTo(romanNumbersConverter.Convert(2)));
             Assert.That("III", Is.EqualTo(romanNumbersConverter.Convert(3)));
             Assert.That("V", Is.EqualTo(romanNumbersConverter.Convert(5)));
+            Assert.That("VI", Is.EqualTo(romanNumbersConverter.Convert(6)));
+            Assert.That("VII", Is.EqualTo(romanNumbersConverter.Convert(7)));
+            Assert.That("VIII", Is.EqualTo(romanNumbersConverter.Convert(8)));
         }
     }
 }

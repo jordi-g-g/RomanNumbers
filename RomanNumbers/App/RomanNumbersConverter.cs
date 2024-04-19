@@ -6,17 +6,24 @@ public class RomanNumbersConverter
     {
         var output = "";
 
-        if (number >= 5)
+        while (number >= 5)
         {
-            output += "V";
-            number -= 5;
+            if (number == 5)
+            {
+                output += "V";
+                number -= 5;
+                break;
+            }
+            output += "I";
+            number -= 1;
         }
-
         for (var i = 0; i < number; i++)
         {
             output += "I";
         }
-
-        return output;
+        
+        var charArray = output.ToCharArray();
+        Array.Reverse(charArray);
+        return new string(charArray);
     }
 }
