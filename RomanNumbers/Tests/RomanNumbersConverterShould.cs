@@ -1,7 +1,7 @@
 using NUnit.Framework;
 using RomanNumbers.App;
 
-namespace RomanNumbers
+namespace RomanNumbers.Tests
 {
     [TestFixture]
     public class RomanNumbersConverterShould
